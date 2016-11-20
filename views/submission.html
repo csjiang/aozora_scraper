@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+
+{% block title %}Scrape{% endblock %}
+
+{% block content %}
+
+<div class="container-fluid"> 
+
+  {% if submitted %}
+  <h3 class="text-center">Your submission has been recorded, and Aozora-Scraper has attempted to scrape {{url}}. Please verify that {{dir}}/{{name}}.html has been created!</h3>
+  {% endif %}
+
+  <div class="form-group col-lg-12 col-md-12 col-sm-12 text-center">
+    <a class="btn btn-primary" href="/scrape">Again?</a>
+  </div>
+</div>
+{% endblock %}

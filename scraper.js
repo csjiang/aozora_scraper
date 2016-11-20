@@ -27,9 +27,9 @@ const scrape = (url, filename, directory/*, json*/) => {
           });
         });
       })
-    //   .catch((err) => {
-    //   console.error('Oops! An error!');;
-    // });
+      .catch((err) => {
+      console.error('Oops! An error!');;
+    });
   };
 
 module.exports = scrape;
